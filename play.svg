@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.52 106.81">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        font-family: SuperFuntime, 'Super Funtime';
+        font-size: 86px;
+      }
+
+      .cls-4 {
+        fill: #a26b4a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-4" width="285.52" height="106.81"/>
+    <text class="cls-3" transform="translate(58.93 79.24)"><tspan class="cls-1" x="0" y="0">P</tspan><tspan x="41.71" y="0">L</tspan><tspan class="cls-2" x="77.14" y="0">A</tspan><tspan x="127.88" y="0">Y</tspan></text>
+  </g>
+</svg>

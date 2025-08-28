@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Hokkien</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #cover, #menu {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #cover {
+            background-color: #f0f8ff;
+        }
+        #cover img {
+            max-width: 120%;
+            max-height: 120%;
+            width: fit-content;
+            height:fit-content;
+        }
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size:auto;
+            background-position: center;
+        }
+        .asset {
+            position: absolute;
+            cursor: pointer;
+            width: 100%; /* Menggunakan persentase untuk responsivitas */
+            max-width: 230px; /* Ukuran maksimum untuk aset */
+        }
+        .asset2 {
+            position: absolute;
+            cursor: pointer;
+            width: 100%; /* Menggunakan persentase untuk responsivitas */
+            max-width: 300px; /* Ukuran maksimum untuk aset */
+        }
+    </style>
+</head>
+<body>
+    <!-- Halaman Cover -->
+    <div id="cover" onclick="showMenu()">
+        <img src="Logo.svg" alt="Logo Permainan" />
+    </div>
+
+    <!-- Halaman Main Menu -->
+    <div id="menu">
+        <div id="background"></div>
+        <img src="Mainmenu.svg" alt="Menu Permainan"/>
+        <img src="play.svg" alt="Play" class="asset2" style="top: 48.5%; left: 41%;" onclick="startGame()" />
+        <img src="Setting.svg" alt="Settings" class="asset" style="top: 67%; left: 43%;" onclick="showSettings()" />
+        <img src="exit.svg" alt="Exit" class="asset" style="top: 81.5%; left: 43%;" onclick="exitGame()" />
+    </div>
+
+    <script>
+        // Tampilkan halaman cover saat pertama kali dibuka
+        document.getElementById('cover').style.display = 'flex';
+
+        function showMenu() {
+            document.getElementById('cover').style.display = 'none';
+            document.getElementById('menu').style.display = 'flex';
+            setBackground('background-image.jpg'); // Ganti dengan nama file background yang sesuai
+        }
+
+        function setBackground(imageUrl) {
+            document.getElementById('background').style.backgroundImage = `url('${imageUrl}')`;
+        }
+
+        function startGame() {
+            alert("Game dimulai!");
+            // Tambahkan logika untuk memulai permainan
+        }
+
+        function showSettings() {
+            alert("Pengaturan belum tersedia.");
+        }
+
+        function exitGame() {
+            if (confirm("Apakah Anda yakin ingin keluar dari permainan?")) {
+                window.close(); // Ini mungkin tidak berfungsi di semua browser.
+            }
+        }
+    </script>
+</body>
+</html>

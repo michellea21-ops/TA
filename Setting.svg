@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.53 78.76">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: SuperFuntime, 'Super Funtime';
+        font-size: 46px;
+      }
+
+      .cls-2 {
+        fill: #a26b4a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-2" width="210.53" height="78.76"/>
+    <text class="cls-1" transform="translate(21.29 54.44)"><tspan x="0" y="0">Settings</tspan></text>
+  </g>
+</svg>
